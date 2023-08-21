@@ -57,7 +57,7 @@ Our DAO believes in the power of transparency. Thus, it emits conspicuous events
    ```bash
  soroban contract build
    ```
-
+  ```
 ## 🤝 Contribution:
 
 🌟 We welcome contributions! If you spot any bugs, have feature requests, or want to improve the codebase, please open an issue or send a pull request.
