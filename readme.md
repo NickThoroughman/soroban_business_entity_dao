@@ -2,13 +2,13 @@
 
 Welcome to our DAO implementation crafted for startups! This is the future of digital-first business entities. We provide a **dynamic**, **transparent**, and **innovative** approach tailored for the decentralized autonomous organizations in the startup realm.
 
-# 🚧 Under Construction 🚧
-
-This DAO for Digital-First Business Entities is currently being updated and Soroban is not production ready.
-
 ## 🌐 Overview
 
 In the era of rapid digital transformation, startups crave for novel methodologies to supercharge their operations, decision-making, and adaptability. Bidding adieu to conventional processes, our DAO paves the way for startups to harness decentralized strategies effortlessly.
+
+# 🚧 Under Construction 🚧
+
+This DAO for Digital-First Business Entities is currently being updated and Soroban is not production ready.
 
 ## 🌟 Key Features
 
