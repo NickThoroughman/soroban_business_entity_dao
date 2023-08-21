@@ -1,24 +1,20 @@
-use soroban_sdk::{Env, Address};
-use super::storage_types::{DataKey};
+use super::storage_types::DataKey;
+use soroban_sdk::{Address, Env, ConversionError};
 
-/// Checks if the invoker is an admin.
-pub fn check_admin(env: &Env) -> bool {
-    match env.data().get::<Address>(DataKey::Admin) {
-        Some(Ok(admin)) => env.invoker() == admin,
-        _ => false,
+fn check_admin(env: &Env) -> bool {
+    let key = DataKey::Admin;
+    match env.storage().instance().get(&key) {
+        Some(stored_admin) => &stored_admin == env.invoker(),
+        None => false,
     }
 }
 
-/// Retrieves the address of the admin.
-pub fn get_admin(env: &Env) -> Result<Address, &'static str> {
-    match env.data().get::<Address>(DataKey::Admin) {
-        Some(Ok(admin)) => Ok(admin),
-        Some(Err(_)) => Err("Failed to convert data to address."),
-        None => Err("Admin not set."),
-    }
+fn get_admin(env: &Env) -> Option<Address> {
+    let key = DataKey::Admin;
+    env.storage().instance().get(&key)
 }
 
-/// Sets the address for the admin.
-pub fn set_admin(env: &Env, admin: Address) {
-    env.data().set(DataKey::Admin, admin)
+fn set_admin(env: &Env, admin: Address) {
+    let key = DataKey::Admin;
+    env.storage().instance().set(&key, admin);
 }
