@@ -51,7 +51,7 @@ Our DAO emits various events to indicate major actions. This helps in transparen
    ```
 3. **Compile**:
    ```bash
-  soroban contract build
+  $ soroban contract build
    ```
 
 ## Contribution:
