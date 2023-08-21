@@ -1,7 +1,6 @@
 use soroban_sdk::{Bytes, Env};
 use soroban_token_sdk::{TokenMetadata, TokenUtils};
 
-// Assuming we have a DAOMetadata structure in our SDK
 #[derive(Clone, Debug)]
 pub struct DAOMetadata {
     pub name: Bytes,         // Name of the DAO
