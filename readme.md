@@ -43,15 +43,15 @@ Our DAO emits various events to indicate major actions. This helps in transparen
 
 1. **Clone the Repository**:
    ```bash
-   git clone [repository_link]
+   git clone https://github.com/iKooruHQ/soroban_business_entity_dao.git
    ```
 2. **Navigate to the Directory**:
    ```bash
-   cd DAO-for-Startups
+   cd soroban_business_entity_dao
    ```
 3. **Compile**:
    ```bash
-   # Use your build toolchain
+   # soroban contract build
    ```
 
 ## Contribution:
